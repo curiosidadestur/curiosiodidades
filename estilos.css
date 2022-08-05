@@ -13,19 +13,28 @@ body {
 
 }
 
+
 header {
     
-    padding: 30px;
+ 
     /*background-color: #25CED1;*/
-    background-color: #383B39;
+    width: 100vw;
+    
+    
     
 }
+
 .header__principal{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: #252525;
     margin-bottom: 2rem;
+    height: 5rem;
   
    
     
@@ -86,14 +95,7 @@ nav>a:hover {
      
 }
 
-.intro {
-    text-align: center;
-    margin-top: 1rem;
-    color: #FCEADE;
-    font-size: 1.2rem;
-    
-    
-}
+
 
 main {
     padding: 50px 0px;
@@ -164,20 +166,18 @@ main {
     margin: 1.2rem 0 2rem 0 ;
 
 }
-
+.leyendas__imagen{
+    width: 70vw;
+}
 .leyendas__imagen>img{
    
-  
+    
    width: 100%;
-   border-radius:0.3rem;
+   margin: 1rem;
+   
  
 }
-.leyendas__imagen{
-    
-    width:70vw ;
-    margin: 0 auto;
 
-}
 
 .indice__texto{
     width: 80vw;
@@ -230,13 +230,16 @@ footer>p {
     
     .header__principal{
         flex-direction: column;
+        position: static;
     }
     
     #logo{
         display: none;
     }
    
-    
+    .intro{
+        background-color: #25CED1;
+    }
     .titulo{
         text-align: center;
     }
@@ -262,13 +265,14 @@ footer>p {
     align-items: center;
     }
     .imagenes__texto{
-        width:60%;
-        position: relative;
-        right: 1.5rem;
-        font-size: 1.2rem;
+        
+        text-align: center;
+        ;
+        font-size: 1.3rem;
     }
     .imagenes>img{
-       width: 70%;
+       width: 80%;
+       margin-top: 5rem;
     }
    
     .leyendas__imagen{
@@ -277,9 +281,8 @@ footer>p {
       }
       .leyendas__imagen>img{
       
-       
-        position:relative;
-        right: 1.5rem;
+       margin:0 auto;
+        
          
      }
     .video{
