@@ -1,7 +1,7 @@
-
-:root{
+:root {
     font-family: 62.5%;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -9,44 +9,45 @@
 }
 
 body {
-    font-family:'roboto',serif;
+    font-family: 'roboto', serif;
 
 }
 
 
 header {
-    
- 
+
+
     /*background-color: #25CED1;*/
     width: 100vw;
-    
-    
-    
+
+
+
 }
 
-.header__principal{
+.header__principal {
     width: 100%;
     position: fixed;
     top: 0;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #252525;
     margin-bottom: 2rem;
     height: 5rem;
-  
-   
-    
+
+
+
 }
-nav {   
-   
+
+nav {
+
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
     width: 40%;
- 
+
 }
 
 
@@ -58,12 +59,13 @@ nav {
 }
 
 .inicio {
-    background-color: #25CED1; 
-    font-size: 1.2rem; 
+    background-color: #25CED1;
+    font-size: 1.2rem;
     border: 0.1rem solid #25CED1;
     border-radius: 0.3rem;
 }
-.inicio:hover{
+
+.inicio:hover {
     background: transparent;
 }
 
@@ -73,8 +75,8 @@ nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 0.3rem;
- 
-    
+
+
 }
 
 nav>a:hover {
@@ -84,15 +86,16 @@ nav>a:hover {
     transform: scale(1.2);
     transition: 0.6s;
     border-radius: 0.3rem;
-    
+
 }
+
 .titulo {
-    
+
     color: #25CED1;
     text-shadow: 2px 2px 5px rgb(63, 114, 97);
-    
-    
-     
+
+
+
 }
 
 
@@ -105,93 +108,187 @@ main {
 }
 
 .imagenes {
- 
+    margin: 3rem;
     display: flex;
-   
     justify-content: space-around;
-   
     
-   
+    height: 80vh;
+
+
+
 }
 
 .imagenes>img {
-    width: 30%;
-    border-radius: 0.3rem;
+    width: 400px;
+    height: 400px;
     
+    align-self: center;
+    border-radius: 100%;
+    object-fit: cover;
+
 }
 
 .imagenes__texto {
+    margin: 2rem;
     align-self: center;
-    font-size: 2rem;
-    width:50%;
+    font-size: 1.8rem;
+    width: 80%;
     font-family: serif;
-    color:#383B39;
-    
+    color: #383B39;
+
 }
 
 .imagenes>p::first-letter {
     font-size: 2.5em;
 }
 
-.container-lista{
+.grid-container {
+    margin: 0 auto;
+    width: 620px;
+    height: 620px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-rows: 200px ;
+    gap: 10px;
+}
+
+.grid-container__item {
+   background-color: red;
+
+}
+.grid-container__item:nth-child(1){
+    background: url(/imagenes/acercademi.jpg);
+    background-size: 100%;
+    
+}
+.grid-container__item:nth-child(2){
+    background: url(/imagenes/viaje.jpg);
+    background-size: 100%;
+    background-position: center;
+    grid-column: 2/4;
+    grid-row: 1/2 ;
+    
+
+}
+.grid-container__item:nth-child(3){
+    background: url(/imagenes/sierrayuli.jpg);
+    background-size: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-position:left;
+    
+   
+}
+
+.grid-container__item:nth-child(4){
+    background: url(/imagenes/yulimango.jpg);
+    background-size: 100%;
+}
+.grid-container__item:nth-child(5){
+    background: url(/imagenes/llama_yuli.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no repeat;
+}
+.grid-container__item:nth-child(6){
+    background: url(/imagenes/yuli_colchondenube.jpg);
+    
+   background-position: center;
+    background-size: cover;
+    
+  
+}
+.grid-container__item:nth-child(7){
+    background: url(/imagenes/ica_yuli.jpg);
+    background-size: 100%;
+    background-position:center;
+}
+.container-lista {
     color: #FCEADE;
     text-align: center;
     margin: 3rem 0;
-    
+
 }
-.container-lista>h1{
+
+.container-lista__text {
+
+    margin: 2rem;
+
+}
+
+.container-lista__text>p {
+    color: rgb(0, 153, 158);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.container-lista>h1 {
     font-size: 3rem;
     margin: 1.2 rem 0;
     background-color: #383B39;
     padding: 1.6rem 0;
 }
-.container-lista>p{
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: rgb(0, 153, 158);
-    font-weight: bold;
-}
-.leyendas{
+
+.leyendas {
     margin: 2rem;
 }
-.leyendas__tunche>h1{
+
+.leyendas__tunche>h1 {
     font-size: 2rem;
 
 }
-.leyendas__tunche>h2{
+
+.leyendas__tunche>h2 {
     margin: 1rem 0 0 0;
 
 }
-.leyendas__tunche>p{
-    margin: 1.2rem 0 2rem 0 ;
+
+.leyendas__tunche>p {
+    margin: 1.2rem 0 2rem 0;
 
 }
-.leyendas__imagen{
-    width: 70vw;
-}
-.leyendas__imagen>img{
-   
-    
-   width: 100%;
-   margin: 1rem;
-   
- 
-}
+
+.leyendas__imagen {
 
 
-.indice__texto{
-    width: 80vw;
+    width: 30rem;
+
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0.8rem 0.5rem 1rem grey;
+}
+
+.leyendas__imagen>img {
+
+
+    width: 100%;
+
+}
+
+.indice__texto {
+    width: 100vw;
     font-size: 2rem;
     padding: 2rem 0;
     margin-bottom: 2rem;
-    border: 0.2rem dashed #383B39;
+    border: 0.2rem solid #383B39;
     margin: 0 auto;
-}
-span{
-    color: #25CED1;
-    font-weight: bold;
+    background: url(/imagenes/Tunche.jpg);
 
 }
+
+.indice__texto>p {
+    color: white;
+    background-color: #000000;
+}
+
+span {
+    background-color: #000000;
+    color: #25CED1;
+    font-weight: bold;
+    border-radius: 0.3rem;
+
+}
+
 .indice li {
 
     text-align: center;
@@ -202,12 +299,21 @@ span{
     margin: 10px 0px;
 }
 
-.video__youtube{
-    margin-top: 2rem;
-    width: 100vh;
-    
-    height: 20rem;
+.video {
+    width: 600px;
+    margin: 0 auto;
+
 }
+
+.video__youtube {
+    margin-top: 2rem;
+    width: 100%;
+
+    height: 20rem;
+    box-shadow: 0.8rem 0.5rem 1rem grey;
+
+}
+
 li>div>h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -224,79 +330,117 @@ footer>p {
     text-align: center;
     position: relative;
     bottom: 20px;
-    
+
 }
-@media screen and (max-width:520px ){
-    
-    .header__principal{
+
+@media screen and (max-width:520px) {
+
+    .header__principal {
         flex-direction: column;
         position: static;
     }
-    
-    #logo{
+
+    #logo {
         display: none;
     }
-   
-    .intro{
+
+    .intro {
         background-color: #25CED1;
     }
-    .titulo{
-        text-align: center;
-    }
-    
 
-    nav{
-        
-        margin-top: 2rem;
+    .titulo {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+
+    nav {
+
+        margin-top: 4rem;
         flex-direction: column;
         width: 100%;
-        
+
     }
+
     nav a {
         text-align: center;
         min-width: 320px;
         margin: 0 auto;
-       background-color: #acacac;
-       
-        
+        background-color: #acacac;
+
+
     }
-    .imagenes{
-    flex-direction: column;
-    align-items: center;
+
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
     }
-    .imagenes__texto{
-        
+
+    .imagenes__texto {
+
         text-align: center;
         ;
         font-size: 1.3rem;
     }
-    .imagenes>img{
-       width: 80%;
-       margin-top: 5rem;
-    }
-   
-    .leyendas__imagen{
-        
-          min-width: 320px;
-      }
-      .leyendas__imagen>img{
-      
-       margin:0 auto;
-        
-         
-     }
-    .video{
-        max-width: 420px;
-        margin: 0 auto;
-        
-    }
-    .video__youtube{
+
+    .imagenes>img {
         
         width: 100%;
-        max-height: 15rem;
-        
+        margin-top: 1rem;
     }
-    footer{
+    .grid-container__item:nth-child(2){
+        
+        
+       
+        grid-column: 2/3;
+        grid-row: 1/2 ;
+    }
+    .grid-container__item:nth-child(4){
+        
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .grid-container__item:nth-child(5),.grid-container__item:nth-child(6){
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .grid-container__item:nth-child(7){
+        grid-column: 1/3;
+       
+    }
+    .leyendas__imagen {
+
+        width: 100%;
+    }
+
+    .leyendas__imagen>img {
+
+        margin: 0 auto;
+        width: 100%;
+
+
+    }
+
+    .indice__texto {
+        width: 100vw;
+    }
+
+    .video {
+        max-width: 380px;
+        margin: 0 auto;
+
+    }
+
+    .video__youtube {
+
+        width: 100%;
+        max-height: 15rem;
+
+    }
+
+    footer {
         padding: 40px;
     }
 }
